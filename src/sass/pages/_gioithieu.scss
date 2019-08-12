@@ -1,0 +1,46 @@
+@import '../variable';
+@import '../mixin';
+.main-content-introduce{
+    padding: 80px 5rem;
+    }
+    .transport{
+        .title-transport{
+            @include style-text(1.25rem,bold);
+            position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            background-color: $blue;
+            bottom: 0;
+            width: 20px;
+            height: 3px;
+            border-radius: 20px;
+            }
+        }
+        .list-transport{
+            .transport-item{
+                width: 100%;
+               padding-right: 15px;
+               padding-bottom: 15px;
+               height: 165px;
+            }
+        }
+        
+    }
+    .introduce-dth{
+        font-family: $roboconden;
+        .title-introduce{
+            @include style-text(1.25rem,bold);
+        }
+        .text-introduce{
+            .text-st{
+                @include style-text(.9rem,bold);
+                color:$color-text;
+                margin-bottom: 2.2rem;
+            }
+            .content-introduce{
+                @include style-text(.9rem,300);
+                color: $color-text;
+            }
+        }
+    }

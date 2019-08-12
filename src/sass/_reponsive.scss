@@ -1,0 +1,84 @@
+
+@media(min-width:993px) and (max-width:1300px){
+    #banner{
+        .banner-info{
+            .banner-text{
+                .title-banner{
+                    @include style-text(3rem,bold);
+                }
+            }
+        }
+    }
+    //=========END HOME=================>
+    //=========TIN TUC=================>
+    .news-recent .info-news .title-info-news{
+        font-size: .8rem !important;
+    }
+}
+@media(max-width:992px){
+    // =====header=====>
+    #header{
+        .search-bar{
+            .search-text{
+                width: 300px;
+            }
+        }
+
+        
+    }
+}
+//===========HOME========>
+    .install-tool-content{
+        img{
+            margin: auto;
+        }
+        .install-text{
+            .install-img{
+                margin: auto;
+            }
+        }
+    }
+@media(max-width:700px){
+    #header{
+        .search-bar{
+            .search-text{
+                width: 150px;
+            }
+        }
+
+        
+    }
+
+}
+@media (max-width:500px){
+    //HOME========================>
+    .d-none-mb{
+        display: none;
+    }
+    .introduce {
+        padding: 70px .5rem;
+    }
+    .list-item {
+        padding: 80px .5rem;
+    }
+    .customer {
+        padding: 0 .5rem;
+    }
+    #banner .banner-info .banner-text {
+        width: 100%;
+    }
+    .install-tool-content img {
+        width: 100%;
+    }
+    //===================GIOI THIEU==============>
+    .main-content-introduce{
+        padding: 20px 1rem !important;
+    }
+}
+//========================LIEN HE=================>
+@media(max-width:576px){
+    .contact{
+        position: static;
+        padding: 0;
+    }
+}

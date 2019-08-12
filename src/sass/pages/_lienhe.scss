@@ -1,0 +1,43 @@
+@import '../variable';
+@import '../mixin';
+@import '../components';
+.contact{
+    position: relative;
+    top: -200px;
+    .bd-rd{
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    }
+    padding: 0 6rem;
+    .form-contact{
+        font-family: $roboconden;
+        padding: 20px;
+        background-color: #fff;
+        .title-contact{
+            @include style-text(1.5rem,bold);
+            color: #333333;
+        }
+        .pd-input{
+            padding: .5rem 0 .5rem .5rem;
+        }
+    }
+    .bgc{
+        background-color: #339fea;
+        padding-top: 20px;
+        .title-contact{
+            @include style-text(1.5rem,bold);
+            color: #333333;
+        }
+    }
+    .btn-submit{
+        background-color: #339fea;
+        border: none;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        a{
+            text-decoration: none;
+            color: $white;
+            @include style-text(.8rem,bold);
+        }
+    }
+}

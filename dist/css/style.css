@@ -1,0 +1,845 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  display: inline-block; }
+
+.container-fluid {
+  padding: 0 !important; }
+
+.btn-humberger, .btn-search, .btn-user, .btn-slide {
+  border: none;
+  background: none; }
+
+.btn-pages {
+  padding: 14px 40px;
+  background-color: #2f9dea;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: inline-block; }
+
+#header {
+  padding: 30px 5rem; }
+  #header .search-bar {
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 20px; }
+    #header .search-bar .search-text {
+      width: 600px;
+      border: none; }
+    #header .search-bar .btn-search {
+      color: grey; }
+
+@media (max-width: 576px) {
+  .icon-header {
+    margin-top: 1rem; } }
+
+.btn-humberger, .btn-search, .btn-user, .btn-slide {
+  border: none;
+  background: none; }
+
+.btn-pages {
+  padding: 14px 40px;
+  background-color: #2f9dea;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: inline-block; }
+
+.carousel {
+  margin-top: 5rem; }
+  .carousel li {
+    width: 10px;
+    height: 10px;
+    background-color: #2f9dea;
+    opacity: .5;
+    border-radius: 50%; }
+    .carousel li .active-carousel {
+      background-color: #2f9dea;
+      opacity: 1; }
+
+.pd-lr {
+  padding: 0 5rem; }
+
+@media (max-width: 500px) {
+  .fl-warp-mb {
+    flex-wrap: wrap; } }
+
+.banner-introduce {
+  background-image: url("../../images/gioithieu/banner-gt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 180px;
+  height: 100%; }
+  .banner-introduce .text-banner {
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 60px; }
+    .banner-introduce .text-banner .tittle-banner {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #fff; }
+      .banner-introduce .text-banner .tittle-banner span {
+        color: #818487;
+        font-size: 1rem;
+        font-weight: 400; }
+
+.category {
+  font-family: "Roboto Condensed", sans-serif; }
+  .category .title-category {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative; }
+    .category .title-category:before {
+      content: '';
+      position: absolute;
+      background-color: #2f9dea;
+      bottom: 0;
+      width: 20px;
+      height: 3px;
+      border-radius: 20px; }
+  .category .list-category li {
+    padding-bottom: 1rem; }
+    .category .list-category li a {
+      text-decoration: none;
+      color: #555555;
+      font-weight: 400; }
+
+#banner {
+  background-image: url("../../images/homePage/banner.png");
+  width: 100%;
+  min-height: 666px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #banner .banner-info {
+    padding-top: 15rem;
+    padding-left: 1rem; }
+    #banner .banner-info .banner-text {
+      color: #fff;
+      width: 50%;
+      font-family: "Roboto Condensed", sans-serif;
+      padding-left: 1rem; }
+      #banner .banner-info .banner-text .title-banner {
+        font-size: 3.75rem;
+        font-weight: bold; }
+      #banner .banner-info .banner-text .text-slide {
+        font-size: 1.25rem;
+        font-weight: 400; }
+      #banner .banner-info .banner-text a {
+        text-decoration: none;
+        font-family: "Oswald", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: #282828;
+        padding: 15px 40px;
+        background-color: #fff;
+        display: inline-block;
+        margin-top: 50px; }
+    #banner .banner-info .space {
+      flex: 1; }
+    #banner .banner-info .btn-slide {
+      color: #fff; }
+      #banner .banner-info .btn-slide .fas {
+        font-size: 3rem; }
+      #banner .banner-info .btn-slide .fa-chevron-right {
+        padding-right: 1rem; }
+
+.procedure {
+  margin-bottom: 80px; }
+  .procedure .title-procedure {
+    margin: 80px 0;
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    position: relative; }
+    .procedure .title-procedure:before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 5px;
+      background-color: #2f9dea;
+      bottom: 0;
+      left: 50%;
+      margin-left: -40px;
+      border-radius: 20px; }
+  .procedure img {
+    margin: auto;
+    display: block;
+    width: 100%; }
+
+.install-tool {
+  background-image: url("../../images/homePage/bg-install.png");
+  width: 100%;
+  height: 100%;
+  min-height: 348px;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .install-tool .install-tool-content {
+    padding: 0 5rem; }
+    .install-tool .install-tool-content img {
+      width: 100%; }
+  .install-tool .install-text .text-center {
+    margin-bottom: 2rem; }
+  .install-tool .install-text .install-img img {
+    width: 100%; }
+  .install-tool .install-text .install-img .chrome {
+    position: relative; }
+  .install-tool .install-text .install-img .coccoc {
+    position: relative; }
+  .install-tool .install-text .install-img .tool-text {
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    font-size: 1rem;
+    font-weight: 400; }
+
+.introduce {
+  padding: 70px 5rem; }
+  .introduce .title-introduce {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 50px; }
+    .introduce .title-introduce:before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 5px;
+      background-color: #2f9dea;
+      bottom: 0;
+      left: 50%;
+      margin-left: -40px;
+      border-radius: 20px; }
+  .introduce .introduce-content h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem; }
+  .introduce .introduce-content .text-introduce {
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #9b9b9b;
+    line-height: 1.5rem; }
+  .introduce .introduce-content .btn-pages {
+    margin-top: 2rem; }
+  .introduce .introduce-content .introduce-img {
+    width: 100%; }
+
+.list-item {
+  padding: 80px 5rem;
+  background-color: #f9f9f9; }
+  .list-item .title-item {
+    font-size: 2.25rem;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    position: relative;
+    margin-bottom: 3.1rem; }
+    .list-item .title-item::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 5px;
+      background-color: #2f9dea;
+      bottom: 0;
+      left: 50%;
+      margin-left: -40px;
+      border-radius: 20px; }
+  .list-item .col-2 {
+    border: 1px solid #e1e1e1;
+    padding: 0;
+    position: relative; }
+    .list-item .col-2 .btn-item {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #9b9b9b;
+      border: none;
+      background: none;
+      display: block;
+      width: 100%;
+      padding: 1rem 0; }
+    .list-item .col-2:hover .btn-item {
+      background-color: #2f9dea;
+      color: #fff; }
+  .list-item .list-item-img .item-name {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #9b9b9b;
+    background-color: #fff;
+    padding: 26px 0; }
+  .list-item .list-item-img .btn-pages {
+    border: 1px solid #555;
+    background-color: transparent;
+    color: #000;
+    display: block;
+    margin: auto; }
+  .list-item .list-item-img .img-items {
+    position: relative; }
+    .list-item .list-item-img .img-items::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: .7;
+      background-color: #2f9dea;
+      display: block;
+      visibility: hidden; }
+    .list-item .list-item-img .img-items .ps-ab {
+      position: absolute;
+      visibility: hidden;
+      top: 36%;
+      z-index: 9;
+      left: 27%;
+      border-color: #ffffff; }
+      .list-item .list-item-img .img-items .ps-ab a {
+        color: #fff; }
+    .list-item .list-item-img .img-items:hover .ps-ab {
+      visibility: visible; }
+    .list-item .list-item-img .img-items:hover:after {
+      visibility: visible; }
+
+.customer {
+  margin-top: 80px;
+  padding: 0 5rem;
+  font-family: "Roboto Condensed", sans-serif; }
+  .customer .title-customer {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3.1rem;
+    position: relative; }
+    .customer .title-customer::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 5px;
+      background-color: #2f9dea;
+      bottom: 0;
+      left: 50%;
+      margin-left: -40px;
+      border-radius: 20px; }
+  .customer .comment-customer {
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75); }
+    .customer .comment-customer .img-comment {
+      margin-top: 3.1rem;
+      margin-bottom: 2rem; }
+    .customer .comment-customer .text-comment {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: #555555; }
+    .customer .comment-customer .customer-name {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #282828; }
+    .customer .comment-customer .job {
+      font-size: 1.12rem;
+      font-weight: 300;
+      color: #555555;
+      padding-bottom: 3.1rem; }
+
+.statistical {
+  background-image: url("../../images/homePage/img-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 467px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  padding: 80px 0; }
+  .statistical .title-statistical {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    margin-bottom: 3rem; }
+    .statistical .title-statistical::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 5px;
+      background-color: #2f9dea;
+      bottom: 0;
+      left: 50%;
+      margin-left: -40px;
+      border-radius: 20px; }
+  .statistical h2 {
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .statistical .year {
+    font-size: 3rem;
+    font-weight: bold; }
+
+.carousel {
+  margin-top: 5rem; }
+  .carousel li {
+    width: 10px;
+    height: 10px;
+    background-color: #2f9dea;
+    opacity: .5;
+    border-radius: 50%; }
+    .carousel li .active-carousel {
+      background-color: #2f9dea;
+      opacity: 1; }
+
+.pd-lr {
+  padding: 0 5rem; }
+
+@media (max-width: 500px) {
+  .fl-warp-mb {
+    flex-wrap: wrap; } }
+
+.banner-introduce {
+  background-image: url("../../images/gioithieu/banner-gt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 180px;
+  height: 100%; }
+  .banner-introduce .text-banner {
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 60px; }
+    .banner-introduce .text-banner .tittle-banner {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #fff; }
+      .banner-introduce .text-banner .tittle-banner span {
+        color: #818487;
+        font-size: 1rem;
+        font-weight: 400; }
+
+.category {
+  font-family: "Roboto Condensed", sans-serif; }
+  .category .title-category {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative; }
+    .category .title-category:before {
+      content: '';
+      position: absolute;
+      background-color: #2f9dea;
+      bottom: 0;
+      width: 20px;
+      height: 3px;
+      border-radius: 20px; }
+  .category .list-category li {
+    padding-bottom: 1rem; }
+    .category .list-category li a {
+      text-decoration: none;
+      color: #555555;
+      font-weight: 400; }
+
+.carousel {
+  margin-top: 5rem; }
+  .carousel li {
+    width: 10px;
+    height: 10px;
+    background-color: #2f9dea;
+    opacity: .5;
+    border-radius: 50%; }
+    .carousel li .active-carousel {
+      background-color: #2f9dea;
+      opacity: 1; }
+
+.pd-lr {
+  padding: 0 5rem; }
+
+@media (max-width: 500px) {
+  .fl-warp-mb {
+    flex-wrap: wrap; } }
+
+.banner-introduce {
+  background-image: url("../../images/gioithieu/banner-gt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 180px;
+  height: 100%; }
+  .banner-introduce .text-banner {
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 60px; }
+    .banner-introduce .text-banner .tittle-banner {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #fff; }
+      .banner-introduce .text-banner .tittle-banner span {
+        color: #818487;
+        font-size: 1rem;
+        font-weight: 400; }
+
+.category {
+  font-family: "Roboto Condensed", sans-serif; }
+  .category .title-category {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative; }
+    .category .title-category:before {
+      content: '';
+      position: absolute;
+      background-color: #2f9dea;
+      bottom: 0;
+      width: 20px;
+      height: 3px;
+      border-radius: 20px; }
+  .category .list-category li {
+    padding-bottom: 1rem; }
+    .category .list-category li a {
+      text-decoration: none;
+      color: #555555;
+      font-weight: 400; }
+
+#footer {
+  padding: 3.75rem 5rem 0 5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #f9f9f9; }
+  #footer .title-footer {
+    font-size: 1.12rem;
+    font-weight: bold;
+    color: #282828; }
+  #footer .footer-1 {
+    font-size: 1rem;
+    font-weight: 300; }
+    #footer .footer-1 .info-footer p {
+      margin-bottom: .5rem; }
+    #footer .footer-1 .info-footer .fab {
+      padding: 0 5px; }
+  #footer .footer-2 .list-link {
+    list-style: disc; }
+    #footer .footer-2 .list-link a {
+      color: #282828;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 300; }
+  #footer .message {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2f9dea;
+    display: inline-block;
+    padding-right: 5px;
+    border-radius: 5px; }
+    #footer .message img {
+      background-color: #0f8ee8;
+      padding: 10px;
+      border-radius: 5px; }
+  #footer .copy-right {
+    font-size: 0.75rem;
+    font-weight: 300; }
+  #footer .contac-footer {
+    padding-top: 20px;
+    border-top: 1px solid grey;
+    margin-top: 2rem; }
+
+@media (max-width: 768px) {
+  .footer-2 {
+    margin-top: 1rem; }
+  .copy-right {
+    display: none; } }
+
+@media (min-width: 993px) and (max-width: 1300px) {
+  #banner .banner-info .banner-text .title-banner {
+    font-size: 3rem;
+    font-weight: bold; }
+  .news-recent .info-news .title-info-news {
+    font-size: .8rem !important; } }
+
+@media (max-width: 992px) {
+  #header .search-bar .search-text {
+    width: 300px; } }
+
+.install-tool-content img {
+  margin: auto; }
+
+.install-tool-content .install-text .install-img {
+  margin: auto; }
+
+@media (max-width: 700px) {
+  #header .search-bar .search-text {
+    width: 150px; } }
+
+@media (max-width: 500px) {
+  .d-none-mb {
+    display: none; }
+  .introduce {
+    padding: 70px .5rem; }
+  .list-item {
+    padding: 80px .5rem; }
+  .customer {
+    padding: 0 .5rem; }
+  #banner .banner-info .banner-text {
+    width: 100%; }
+  .install-tool-content img {
+    width: 100%; }
+  .main-content-introduce {
+    padding: 20px 1rem !important; } }
+
+@media (max-width: 576px) {
+  .contact {
+    position: static;
+    padding: 0; } }
+
+.main-content-introduce {
+  padding: 80px 5rem; }
+
+.transport .title-transport {
+  font-size: 1.25rem;
+  font-weight: bold;
+  position: relative; }
+  .transport .title-transport:before {
+    content: '';
+    position: absolute;
+    background-color: #2f9dea;
+    bottom: 0;
+    width: 20px;
+    height: 3px;
+    border-radius: 20px; }
+
+.transport .list-transport .transport-item {
+  width: 100%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  height: 165px; }
+
+.introduce-dth {
+  font-family: "Roboto Condensed", sans-serif; }
+  .introduce-dth .title-introduce {
+    font-size: 1.25rem;
+    font-weight: bold; }
+  .introduce-dth .text-introduce .text-st {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 2.2rem; }
+  .introduce-dth .text-introduce .content-introduce {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #555555; }
+
+.carousel {
+  margin-top: 5rem; }
+  .carousel li {
+    width: 10px;
+    height: 10px;
+    background-color: #2f9dea;
+    opacity: .5;
+    border-radius: 50%; }
+    .carousel li .active-carousel {
+      background-color: #2f9dea;
+      opacity: 1; }
+
+.pd-lr {
+  padding: 0 5rem; }
+
+@media (max-width: 500px) {
+  .fl-warp-mb {
+    flex-wrap: wrap; } }
+
+.banner-introduce {
+  background-image: url("../../images/gioithieu/banner-gt.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 180px;
+  height: 100%; }
+  .banner-introduce .text-banner {
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 60px; }
+    .banner-introduce .text-banner .tittle-banner {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #fff; }
+      .banner-introduce .text-banner .tittle-banner span {
+        color: #818487;
+        font-size: 1rem;
+        font-weight: 400; }
+
+.category {
+  font-family: "Roboto Condensed", sans-serif; }
+  .category .title-category {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative; }
+    .category .title-category:before {
+      content: '';
+      position: absolute;
+      background-color: #2f9dea;
+      bottom: 0;
+      width: 20px;
+      height: 3px;
+      border-radius: 20px; }
+  .category .list-category li {
+    padding-bottom: 1rem; }
+    .category .list-category li a {
+      text-decoration: none;
+      color: #555555;
+      font-weight: 400; }
+
+.contact {
+  position: relative;
+  top: -200px;
+  padding: 0 6rem; }
+  .contact .bd-rd {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75); }
+  .contact .form-contact {
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 20px;
+    background-color: #fff; }
+    .contact .form-contact .title-contact {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333333; }
+    .contact .form-contact .pd-input {
+      padding: .5rem 0 .5rem .5rem; }
+  .contact .bgc {
+    background-color: #339fea;
+    padding-top: 20px; }
+    .contact .bgc .title-contact {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333333; }
+  .contact .btn-submit {
+    background-color: #339fea;
+    border: none;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem; }
+    .contact .btn-submit a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: bold; }
+
+.main-content-news {
+  padding: 5rem 5rem; }
+
+.banner-news {
+  background-image: url("../../images/tintuc/banner-news.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 180px;
+  height: 100%; }
+  .banner-news .text-banner {
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 60px; }
+    .banner-news .text-banner .tittle-banner {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #fff; }
+    .banner-news .text-banner .home {
+      color: #999999;
+      font-size: 1rem;
+      font-weight: 400; }
+
+.news-recent {
+  font-family: "Roboto Condensed", sans-serif; }
+  .news-recent .title-news {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative; }
+    .news-recent .title-news:before {
+      content: '';
+      position: absolute;
+      background-color: #2f9dea;
+      bottom: 0;
+      width: 20px;
+      height: 3px;
+      border-radius: 20px; }
+  .news-recent .info-news .date-news {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #555555; }
+  .news-recent .info-news .title-info-news {
+    font-size: 1.17rem;
+    font-weight: 400;
+    color: #282828; }
+  .news-recent .pd-bd {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid grey; }
+  .news-recent .bd-none {
+    border: none; }
+  .news-recent .p-t {
+    padding-top: 2rem; }
+
+.news .content-news .date-news {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #555555; }
+
+.news .content-news .title-news {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #282828; }
+
+.news .content-news .text-news {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #555555; }
+
+@media (max-width: 768px) {
+  .list-news .img-100 {
+    width: 100%; }
+  .main-content-news {
+    padding: 3rem 1rem; } }
+
+@media (max-width: 576px) {
+  .list-news .img-100 {
+    width: 100%; } }

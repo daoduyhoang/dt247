@@ -1,0 +1,277 @@
+@import '../mixin';
+@import '../variable';
+@import '../components';
+#banner{
+    background-image: url('../../images/homePage/banner.png');
+    width: 100%;
+    min-height: 666px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .banner-info{
+        padding-top: 15rem;
+        padding-left: 1rem;
+        .banner-text{
+            color: $white;
+            width: 50%;
+            font-family: $roboconden;
+            padding-left: 1rem;
+            .title-banner{
+                @include style-text(3.75rem,bold);
+            }
+            .text-slide{
+                @include style-text(1.25rem,400);
+            }
+            a{
+                text-decoration: none;
+                font-family: $oswald;
+                @include style-text(15px,400);
+                color: $black;
+                padding: 15px 40px;
+                background-color: $white;
+                display: inline-block;
+                margin-top: 50px;
+            }
+        }
+        .space{
+            flex: 1;
+        }
+        .btn-slide{
+            color: $white;
+            .fas{
+                font-size: 3rem;
+            }
+            .fa-chevron-right{
+                padding-right: 1rem;
+            }
+        }
+    }
+   
+}
+.procedure{
+    margin-bottom: 80px;
+    .title-procedure{
+        margin: 80px 0;
+        @include style-text(2.25rem,bold);
+        font-family:$roboconden;
+        position: relative;
+        &:before{
+            @include underline();
+        }
+    }
+    img{
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+}
+.install-tool{
+    background-image: url('../../images/homePage/bg-install.png');
+    width: 100%;
+    height: 100%;
+    min-height: 348px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .install-tool-content{
+        padding: 0 5rem;
+        img{
+            width: 100%;
+        }
+    }
+    .install-text{
+        .text-center{
+            margin-bottom: 2rem;
+        }
+        .install-img{
+            img{
+                width: 100%;
+            }
+            .chrome{
+               position: relative;
+            }
+            .coccoc{
+                position: relative;
+            }
+            .tool-text{
+                color: $white;
+                font-family: $roboconden;
+                position: absolute;
+                top: 20%;
+                left: 32%;
+                @include style-text(1rem,400);
+            }
+       }
+    }
+}
+.introduce{
+    padding: 70px 5rem;
+    .title-introduce{
+        font-family: $roboto;
+        @include style-text(2.25rem,bold);
+        position: relative;
+        margin-bottom: 50px;
+        &:before{
+            @include underline();
+        }
+    }
+    .introduce-content{
+        h1{
+            font-family: $roboconden;
+            @include style-text(1.5rem,bold);
+            padding-bottom: 1rem;
+        }
+        .text-introduce{
+            @include style-text(.9rem,300);
+            font-family: $roboconden;
+            color: $dark-grey;
+            line-height: 1.5rem;
+        }
+        .btn-pages{
+            margin-top: 2rem;
+        }
+        .introduce-img{
+            width: 100%;
+        }
+    }
+}
+.list-item{
+    padding: 80px 5rem;
+    background-color: $light-grey;
+    .title-item{
+        @include style-text(2.25rem,bold);
+        font-family: $roboconden;
+        position: relative;
+        &::before{
+            @include underline();
+        }
+        margin-bottom: 3.1rem;
+    }
+    .col-2{
+        border: 1px solid #e1e1e1;
+        padding: 0;
+        position: relative;
+        .btn-item{
+            font-family: $roboconden;
+            @include style-text(.9rem,400);
+            color: $dark-grey;
+            border: none;
+            background: none;
+            display: block;
+            width: 100%;
+            padding: 1rem 0;
+        }
+        &:hover .btn-item{
+            background-color: $blue;
+            color: $white;
+        }
+    }
+    .list-item-img{
+        .item-name{
+            @include style-text(1rem,300);
+            font-family: $roboconden;
+            color: $dark-grey;
+            background-color: $white;
+            padding: 26px 0;
+        }
+        .btn-pages{
+            border: 1px solid #555;
+            background-color: transparent;
+            color: #000;
+            display: block;
+            margin: auto;
+        }
+        .img-items{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: .7;
+                background-color: $blue;
+                display: block;
+                visibility: hidden;
+            }
+            .ps-ab{
+                position: absolute;
+                visibility: hidden;
+                top: 36%;
+                z-index: 9;
+                left: 27%;
+                border-color: #ffffff;
+                a{
+                    color: #fff;
+                }
+            }
+            &:hover .ps-ab{
+                visibility: visible;
+            }
+            &:hover:after{
+                visibility: visible;
+            } 
+        }
+    }
+}
+.customer{
+    margin-top: 80px;
+    padding: 0 5rem;
+    font-family: $roboconden;
+    .title-customer{
+        @include style-text(2.25rem,bold);
+        color: black;
+        margin-bottom: 3.1rem;
+        position: relative;
+        &::before{
+            @include underline();
+        }
+    }
+    .comment-customer{
+    //    border: 1px solid #000;
+       box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.75);
+       .img-comment{
+           margin-top: 3.1rem;
+            margin-bottom: 2rem;
+       }
+       .text-comment{
+            @include style-text(.9rem,300);
+            color: $color-text;
+       }
+       .customer-name{
+           @include style-text(1.5rem,400);
+           color: $black;
+       }
+       .job{
+           @include style-text(1.12rem,300);
+           color:  $color-text;
+           padding-bottom: 3.1rem;
+       }
+    }
+}
+.statistical{
+    background-image: url('../../images/homePage/img-footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 467px;
+    font-family: $roboconden;
+    color: $white;
+    padding: 80px 0;
+    .title-statistical{
+        @include style-text(2.25rem,bold);
+        color: $white;
+        position: relative;
+        margin-bottom: 3rem;
+        &::before{
+            @include underline();
+        }
+    }h2{
+        @include style-text(1.5rem,400);
+    }
+    .year{
+        @include style-text(3rem, bold);
+    }
+
+}

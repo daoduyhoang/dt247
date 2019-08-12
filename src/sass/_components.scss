@@ -1,0 +1,72 @@
+// CAROUSEL
+.carousel{
+    margin-top: 5rem;
+    li{
+        width: 10px;
+        height: 10px;
+        background-color: $blue;
+        opacity: .5;
+        border-radius: 50%;
+        .active-carousel{
+            background-color:$blue;
+            opacity: 1;
+        }
+    }
+}
+// OTHER
+.pd-lr{
+    padding: 0 5rem;
+}
+@media(max-width:500px){
+    .fl-warp-mb{
+        flex-wrap: wrap
+    }
+}
+// BANNER
+.banner-introduce{
+    background-image: url('../../images/gioithieu/banner-gt.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 180px;
+    height: 100%;
+    .text-banner{
+        font-family: $roboconden;
+        padding-top: 60px;
+        .tittle-banner{
+            @include style-text(2.25rem,bold);
+            color: $white;
+            span{
+                color: #818487;
+                @include style-text(1rem,400);
+            }
+        }
+    }
+}
+// Danh Muc
+.category{
+    font-family: $roboconden;
+    .title-category{
+        @include style-text(1.25rem,bold);
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            background-color: $blue;
+            bottom: 0;
+            width: 20px;
+            height: 3px;
+            border-radius: 20px;
+        }
+    }
+    .list-category{
+        li{
+            padding-bottom: 1rem;
+            a{
+                text-decoration: none;
+                color: $color-text;
+                font-weight: 400;
+            }
+        }
+    }
+}

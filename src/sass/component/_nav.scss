@@ -1,0 +1,24 @@
+@import '../variable';
+@import '../mixin';
+@import '../component/button';
+#header{
+    padding: 30px 5rem;
+    .search-bar{
+        padding: 5px 10px;
+        border: 1px solid grey;
+        border-radius: 20px;
+
+        .search-text{
+            width: 600px;
+            border: none;
+        }
+        .btn-search{
+            color: grey;
+        }
+    }
+}
+@media(max-width:576px){
+    .icon-header{
+        margin-top: 1rem;
+    }
+}

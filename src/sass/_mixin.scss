@@ -1,0 +1,20 @@
+@mixin btn-button {
+    border: none;
+    background: none;
+}
+@mixin style-text($fsize,$fweight) {
+    font-size: $fsize;
+    font-weight: $fweight;
+}
+@mixin underline {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: $blue;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+    border-radius: 20px;
+    
+}

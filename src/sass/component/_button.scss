@@ -1,0 +1,13 @@
+@import '../variable';
+@import '../mixin';
+.btn-humberger,.btn-search,.btn-user,.btn-slide{
+    @include btn-button();
+}
+.btn-pages{
+    padding: 14px 40px;
+    background-color: $blue;
+    color: $white;
+    font-family: $roboconden;
+    @include style-text(.9rem,400);
+    display: inline-block;
+}
