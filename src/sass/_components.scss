@@ -13,14 +13,21 @@
         }
     }
 }
+.carousel-indicators li{
+    width: 10px !important;
+    height: 10px !important;
+    background-color: $blue !important;
+    border-radius: 50% !important;
+}
 // OTHER
 .pd-lr{
     padding: 0 5rem;
 }
-@media(max-width:500px){
+@media(max-width:576px){
     .fl-warp-mb{
         flex-wrap: wrap
     }
+    
 }
 // BANNER
 .banner-introduce{
@@ -67,6 +74,17 @@
                 color: $color-text;
                 font-weight: 400;
             }
+        }
+    }
+}
+// SLIDE
+// .op-hiden{
+//     opacity: 0;
+// }
+.customer{
+    .all-sile{
+        .active-op{
+            opacity: 1;
         }
     }
 }

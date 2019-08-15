@@ -20,7 +20,7 @@
     #header{
         .search-bar{
             .search-text{
-                width: 300px;
+                width: 150px;
             }
         }
 
@@ -76,9 +76,3 @@
     }
 }
 //========================LIEN HE=================>
-@media(max-width:576px){
-    .contact{
-        position: static;
-        padding: 0;
-    }
-}

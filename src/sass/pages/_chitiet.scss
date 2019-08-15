@@ -1,0 +1,7 @@
+@import '../variable';
+@import '../mixin';
+@media(max-width:768px){
+    .news-recent .info-news .title-info-news a{
+        font-size: 1.8rem !important;
+    }
+}

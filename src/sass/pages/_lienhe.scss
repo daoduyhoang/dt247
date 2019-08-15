@@ -41,3 +41,12 @@
         }
     }
 }
+textarea:focus, input:focus{
+    outline: none;
+}
+@media(max-width:768px){
+    .contact{
+        position: static;
+        padding: 1rem;
+    }
+}

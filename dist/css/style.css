@@ -75,14 +75,62 @@ li {
     border: 1px solid grey;
     border-radius: 20px; }
     #header .search-bar .search-text {
-      width: 600px;
+      width: 400px;
       border: none; }
     #header .search-bar .btn-search {
       color: grey; }
+  #header .menu a {
+    text-decoration: none;
+    color: #555555;
+    text-transform: uppercase;
+    padding: 0 2rem; }
+
+.ds-none {
+  display: none; }
 
 @media (max-width: 576px) {
   .icon-header {
     margin-top: 1rem; } }
+
+@media (min-width: 993px) and (max-width: 1300px) {
+  #header .search-bar .search-text {
+    width: 150px; } }
+
+@media (max-width: 992px) {
+  #header .menu a {
+    padding: 0 1rem; } }
+
+@media (max-width: 800px) {
+  #header .menu a {
+    padding: 0 .8rem; } }
+
+@media (max-width: 768px) {
+  #header .search-bar {
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 20px; }
+    #header .search-bar .search-text {
+      width: 400px;
+      border: none; }
+    #header .search-bar .btn-search {
+      color: grey; }
+  #header .header-ps {
+    position: relative; }
+  #header .menu {
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center; }
+  #header .block-menu {
+    display: block; }
+  #header .none-menu {
+    display: none; }
+  .ds-block-mb {
+    display: block; }
+  .ds-none-mb {
+    display: none; } }
 
 .btn-humberger, .btn-search, .btn-user, .btn-slide {
   border: none;
@@ -109,10 +157,16 @@ li {
       background-color: #2f9dea;
       opacity: 1; }
 
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #2f9dea !important;
+  border-radius: 50% !important; }
+
 .pd-lr {
   padding: 0 5rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .fl-warp-mb {
     flex-wrap: wrap; } }
 
@@ -156,6 +210,9 @@ li {
       color: #555555;
       font-weight: 400; }
 
+.customer .all-sile .active-op {
+  opacity: 1; }
+
 #banner {
   background-image: url("../../images/homePage/banner.png");
   width: 100%;
@@ -166,27 +223,6 @@ li {
   #banner .banner-info {
     padding-top: 15rem;
     padding-left: 1rem; }
-    #banner .banner-info .banner-text {
-      color: #fff;
-      width: 50%;
-      font-family: "Roboto Condensed", sans-serif;
-      padding-left: 1rem; }
-      #banner .banner-info .banner-text .title-banner {
-        font-size: 3.75rem;
-        font-weight: bold; }
-      #banner .banner-info .banner-text .text-slide {
-        font-size: 1.25rem;
-        font-weight: 400; }
-      #banner .banner-info .banner-text a {
-        text-decoration: none;
-        font-family: "Oswald", sans-serif;
-        font-size: 15px;
-        font-weight: 400;
-        color: #282828;
-        padding: 15px 40px;
-        background-color: #fff;
-        display: inline-block;
-        margin-top: 50px; }
     #banner .banner-info .space {
       flex: 1; }
     #banner .banner-info .btn-slide {
@@ -195,6 +231,36 @@ li {
         font-size: 3rem; }
       #banner .banner-info .btn-slide .fa-chevron-right {
         padding-right: 1rem; }
+
+.banner-text {
+  color: #fff;
+  width: 70%;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 1rem;
+  position: absolute;
+  top: 25%;
+  left: 10%; }
+  .banner-text .title-banner {
+    font-size: 3.75rem;
+    font-weight: bold; }
+  .banner-text .text-slide {
+    font-size: 1.25rem;
+    font-weight: 400; }
+  .banner-text a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #282828;
+    padding: 15px 40px;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 50px; }
+
+.carousel-caption {
+  text-align: left !important;
+  left: 10% !important;
+  top: 20% !important; }
 
 .procedure {
   margin-bottom: 80px; }
@@ -214,10 +280,20 @@ li {
       left: 50%;
       margin-left: -40px;
       border-radius: 20px; }
-  .procedure img {
-    margin: auto;
-    display: block;
-    width: 100%; }
+  .procedure .procedure-img img {
+    width: 100%;
+    display: block; }
+  .procedure .procedure-img .col-2 {
+    position: relative; }
+    .procedure .procedure-img .col-2 .step {
+      position: absolute;
+      width: 50%;
+      text-align: center;
+      top: 50%;
+      left: 30%;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Roboto Condensed", sans-serif; }
 
 .install-tool {
   background-image: url("../../images/homePage/bg-install.png");
@@ -239,13 +315,16 @@ li {
   .install-tool .install-text .install-img .coccoc {
     position: relative; }
   .install-tool .install-text .install-img .tool-text {
-    color: #fff;
     font-family: "Roboto Condensed", sans-serif;
     position: absolute;
     top: 20%;
-    left: 32%;
-    font-size: 1rem;
-    font-weight: 400; }
+    left: 32%; }
+    .install-tool .install-text .install-img .tool-text a {
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+      display: block; }
 
 .introduce {
   padding: 70px 5rem; }
@@ -361,6 +440,14 @@ li {
   margin-top: 80px;
   padding: 0 5rem;
   font-family: "Roboto Condensed", sans-serif; }
+  .customer .all-sile {
+    position: relative; }
+    .customer .all-sile .row {
+      transition: .4s;
+      opacity: 0; }
+  .customer .ps-a {
+    position: absolute;
+    top: 0; }
   .customer .title-customer {
     font-size: 2.25rem;
     font-weight: bold;
@@ -429,6 +516,146 @@ li {
     font-size: 3rem;
     font-weight: bold; }
 
+@media (max-width: 1200px) {
+  .banner-text {
+    color: #fff;
+    width: 90%;
+    padding-left: 1rem;
+    top: 25%;
+    left: 10%; }
+    .banner-text .title-banner {
+      font-size: 3rem;
+      font-weight: bold; }
+    .banner-text .text-slide {
+      font-size: 1.25rem;
+      font-weight: 400; }
+    .banner-text a {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 10px 30px;
+      margin-top: 50px; }
+  .procedure {
+    margin-bottom: 80px; }
+    .procedure .title-procedure {
+      margin: 80px 0;
+      font-size: 2.25rem;
+      font-weight: bold;
+      font-family: "Roboto Condensed", sans-serif;
+      position: relative; }
+      .procedure .title-procedure:before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 5px;
+        background-color: #2f9dea;
+        bottom: 0;
+        left: 50%;
+        margin-left: -40px;
+        border-radius: 20px; }
+    .procedure .procedure-img .col-2 .step {
+      position: absolute;
+      width: 50%;
+      text-align: center;
+      top: 41%;
+      left: 29%;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Roboto Condensed", sans-serif; } }
+
+@media (max-width: 992px) {
+  .banner-text {
+    color: #fff;
+    width: 90%;
+    padding-left: 1rem;
+    top: 25%;
+    left: 10%; }
+    .banner-text .title-banner {
+      font-size: 2.5rem;
+      font-weight: bold; }
+    .banner-text .text-slide {
+      font-size: 1rem;
+      font-weight: 400; }
+    .banner-text a {
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 10px 30px;
+      margin-top: 50px; }
+  .procedure-img .col-2 .step {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 41%;
+    left: 29%;
+    font-size: .8rem !important;
+    font-family: "Roboto Condensed", sans-serif; } }
+
+.carousel {
+  cursor: pointer; }
+  .carousel .active-carousel {
+    opacity: 1; }
+
+.list-item .list-item-img .img-items .ps-ab {
+  left: 50%;
+  transform: translateX(-50%); }
+
+@media (max-width: 768px) {
+  .banner-text {
+    color: #fff;
+    width: 90%;
+    padding-left: 1rem;
+    top: 25%;
+    left: 10%; }
+    .banner-text .title-banner {
+      font-size: 2rem;
+      font-weight: bold; }
+    .banner-text .text-slide {
+      font-size: 0.8rem;
+      font-weight: 400; }
+    .banner-text a {
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 10px 30px;
+      margin-top: 1rem; }
+  .procedure-img .col-2 .step {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 41%;
+    left: 29%;
+    font-size: .6rem !important;
+    font-family: "Roboto Condensed", sans-serif; } }
+
+@media (max-width: 568px) {
+  .banner-text {
+    color: #fff;
+    width: 90%;
+    padding-left: 1rem;
+    top: 7%;
+    left: 10%; }
+    .banner-text .title-banner {
+      font-size: 2rem;
+      font-weight: bold; }
+    .banner-text .text-slide {
+      font-size: 0.8rem;
+      font-weight: 400; }
+    .banner-text a {
+      font-size: 0.5rem;
+      font-weight: 400;
+      padding: 10px 30px;
+      margin-top: 2rem; }
+  .ds-none-mb {
+    display: none; }
+  .coccoc {
+    margin-top: 1rem; }
+  .procedure-img .col-2 .step {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 41%;
+    left: 29%;
+    font-size: .5rem !important;
+    font-family: "Roboto Condensed", sans-serif; } }
+
 .carousel {
   margin-top: 5rem; }
   .carousel li {
@@ -441,10 +668,16 @@ li {
       background-color: #2f9dea;
       opacity: 1; }
 
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #2f9dea !important;
+  border-radius: 50% !important; }
+
 .pd-lr {
   padding: 0 5rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .fl-warp-mb {
     flex-wrap: wrap; } }
 
@@ -488,6 +721,9 @@ li {
       color: #555555;
       font-weight: 400; }
 
+.customer .all-sile .active-op {
+  opacity: 1; }
+
 .carousel {
   margin-top: 5rem; }
   .carousel li {
@@ -500,10 +736,16 @@ li {
       background-color: #2f9dea;
       opacity: 1; }
 
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #2f9dea !important;
+  border-radius: 50% !important; }
+
 .pd-lr {
   padding: 0 5rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .fl-warp-mb {
     flex-wrap: wrap; } }
 
@@ -546,6 +788,9 @@ li {
       text-decoration: none;
       color: #555555;
       font-weight: 400; }
+
+.customer .all-sile .active-op {
+  opacity: 1; }
 
 #footer {
   padding: 3.75rem 5rem 0 5rem;
@@ -603,7 +848,7 @@ li {
 
 @media (max-width: 992px) {
   #header .search-bar .search-text {
-    width: 300px; } }
+    width: 150px; } }
 
 .install-tool-content img {
   margin: auto; }
@@ -630,11 +875,6 @@ li {
     width: 100%; }
   .main-content-introduce {
     padding: 20px 1rem !important; } }
-
-@media (max-width: 576px) {
-  .contact {
-    position: static;
-    padding: 0; } }
 
 .main-content-introduce {
   padding: 80px 5rem; }
@@ -685,10 +925,16 @@ li {
       background-color: #2f9dea;
       opacity: 1; }
 
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #2f9dea !important;
+  border-radius: 50% !important; }
+
 .pd-lr {
   padding: 0 5rem; }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .fl-warp-mb {
     flex-wrap: wrap; } }
 
@@ -732,6 +978,9 @@ li {
       color: #555555;
       font-weight: 400; }
 
+.customer .all-sile .active-op {
+  opacity: 1; }
+
 .contact {
   position: relative;
   top: -200px;
@@ -766,6 +1015,14 @@ li {
       color: #fff;
       font-size: 0.8rem;
       font-weight: bold; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+@media (max-width: 768px) {
+  .contact {
+    position: static;
+    padding: 1rem; } }
 
 .main-content-news {
   padding: 5rem 5rem; }
@@ -807,10 +1064,11 @@ li {
     font-size: 0.8rem;
     font-weight: 400;
     color: #555555; }
-  .news-recent .info-news .title-info-news {
-    font-size: 1.17rem;
+  .news-recent .info-news .title-info-news a {
+    font-size: 0.8rem;
     font-weight: 400;
-    color: #282828; }
+    color: #282828;
+    text-decoration: none; }
   .news-recent .pd-bd {
     padding-bottom: 2rem;
     border-bottom: 1px solid grey; }
@@ -824,10 +1082,11 @@ li {
   font-weight: 400;
   color: #555555; }
 
-.news .content-news .title-news {
+.news .content-news .title-news a {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #282828; }
+  color: #282828;
+  text-decoration: none; }
 
 .news .content-news .text-news {
   font-size: 0.9rem;
@@ -838,8 +1097,20 @@ li {
   .list-news .img-100 {
     width: 100%; }
   .main-content-news {
-    padding: 3rem 1rem; } }
+    padding: 3rem 1rem; }
+  .news-recent .info-news .title-info-news a {
+    font-size: 1.8rem;
+    font-weight: 400; } }
 
 @media (max-width: 576px) {
   .list-news .img-100 {
     width: 100%; } }
+
+@media (max-width: 992px) {
+  .list-news .img-100 {
+    width: 100%; }
+  .main-content-news {
+    padding: 3rem 1rem; }
+  .news-recent .info-news .title-info-news a {
+    font-size: 1.8rem;
+    font-weight: 400; } }
